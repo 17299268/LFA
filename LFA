@@ -1,0 +1,12 @@
+cocaVend(){
+int total = 0, coin;
+while (total != 45){
+receive(coin);
+if ((coin==10 && total==40)
+||(coin==25 && total>=25))
+reject(coin);
+else
+total += coin;
+}
+return new Coca();
+}
